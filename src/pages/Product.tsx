@@ -18,7 +18,7 @@ const Product = () => {
   if (!product) {
     return (
       <Layout>
-        <div className="container-dyson py-24 text-center">
+        <div className="container-main py-24 text-center">
           <h1 className="text-2xl font-semibold">Product not found</h1>
           <Link to="/" className="mt-4 inline-block underline">
             Return to home
@@ -31,7 +31,7 @@ const Product = () => {
   return (
     <Layout>
       {/* Breadcrumb */}
-      <nav className="container-dyson py-4 border-b border-border">
+      <nav className="container-main py-4 border-b border-border">
         <ol className="flex items-center gap-2 text-sm">
           <li>
             <Link to="/" className="text-muted-foreground hover:text-foreground">
@@ -54,7 +54,7 @@ const Product = () => {
 
       {/* Product Section */}
       <section className="py-12">
-        <div className="container-dyson">
+        <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Images */}
             <div className="space-y-4">
@@ -145,10 +145,10 @@ const Product = () => {
 
               {/* Add to Cart */}
               <div className="space-y-4">
-                <button className="w-full dyson-button-primary">
+                <button className="w-full btn-main-primary">
                   Add to basket - £{product.price * quantity}
                 </button>
-                <button className="w-full dyson-button-secondary">
+                <button className="w-full btn-main-secondary">
                   Buy now
                 </button>
               </div>
@@ -175,7 +175,7 @@ const Product = () => {
 
       {/* Features/Specs Tabs */}
       <section className="py-12 bg-secondary">
-        <div className="container-dyson">
+        <div className="container-main">
           <div className="flex justify-center gap-8 mb-12 border-b border-border">
             <button
               onClick={() => setActiveTab("features")}
@@ -229,7 +229,7 @@ const Product = () => {
 
       {/* Related Products */}
       <section className="py-16">
-        <div className="container-dyson">
+        <div className="container-main">
           <h2 className="text-2xl font-semibold mb-8">You may also like</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {relatedProducts.map((product) => (

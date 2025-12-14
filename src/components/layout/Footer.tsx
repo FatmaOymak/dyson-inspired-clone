@@ -68,7 +68,7 @@ export function Footer() {
   return (
     <footer className="bg-[hsl(0_0%_8%)] text-[hsl(0_0%_85%)]">
       {/* Main footer links */}
-      <div className="container-dyson py-12">
+      <div className="container-main py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10">
           {/* Products Column */}
           <div>
@@ -156,7 +156,7 @@ export function Footer() {
 
       {/* Legal links section */}
       <div className="border-t border-[hsl(0_0%_20%)]">
-        <div className="container-dyson py-6">
+        <div className="container-main py-6">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex flex-wrap items-center gap-x-1 text-xs text-[hsl(0_0%_60%)]">
               {footerLinks.legal.map((link, index) => (
@@ -190,7 +190,7 @@ export function Footer() {
 
       {/* Disclaimer and copyright */}
       <div className="border-t border-[hsl(0_0%_20%)]">
-        <div className="container-dyson py-6">
+        <div className="container-main py-6">
           <div className="flex flex-col md:flex-row justify-between gap-6">
             <p className="text-xs text-[hsl(0_0%_50%)] max-w-4xl leading-relaxed">
               **PayPal Credit and PayPal Pay in 3 are trading names of PayPal UK Ltd, 5 Fleet Place, London, United Kingdom, EC4M 7RD. PayPal Credit: Terms and conditions apply. Credit subject to status, UK residents only. PayPal Pay in 3: PayPal Pay in 3 is not regulated by the Financial Conduct Authority.

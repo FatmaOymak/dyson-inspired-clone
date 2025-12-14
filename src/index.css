@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Dyson-inspired premium design system */
+    /* Premium design system */
     --background: 0 0% 100%;
     --foreground: 0 0% 8%;
 
@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 8%;
 
-    /* Dyson purple accent */
+    /* Purple accent */
     --primary: 276 100% 50%;
     --primary-foreground: 0 0% 100%;
 
@@ -38,12 +38,12 @@
 
     --radius: 0rem;
 
-    /* Custom Dyson colors */
-    --dyson-dark: 0 0% 8%;
-    --dyson-gray: 0 0% 45%;
-    --dyson-light: 0 0% 96%;
-    --dyson-purple: 276 100% 50%;
-    --dyson-orange: 24 100% 50%;
+    /* Custom brand colors */
+    --brand-dark: 0 0% 8%;
+    --brand-gray: 0 0% 45%;
+    --brand-light: 0 0% 96%;
+    --brand-purple: 276 100% 50%;
+    --brand-orange: 24 100% 50%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 0 0% 8%;
@@ -84,9 +84,9 @@
     --input: 0 0% 20%;
     --ring: 276 100% 60%;
 
-    --dyson-dark: 0 0% 98%;
-    --dyson-gray: 0 0% 65%;
-    --dyson-light: 0 0% 15%;
+    --brand-dark: 0 0% 98%;
+    --brand-gray: 0 0% 65%;
+    --brand-light: 0 0% 15%;
 
     --sidebar-background: 0 0% 8%;
     --sidebar-foreground: 0 0% 98%;
@@ -114,24 +114,24 @@
 }
 
 @layer components {
-  .container-dyson {
+  .container-main {
     @apply w-full max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12;
   }
 
-  .dyson-button {
+  .btn-main {
     @apply inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-wide uppercase transition-all duration-300;
   }
 
-  .dyson-button-primary {
-    @apply dyson-button bg-foreground text-background hover:bg-foreground/90;
+  .btn-main-primary {
+    @apply btn-main bg-foreground text-background hover:bg-foreground/90;
   }
 
-  .dyson-button-secondary {
-    @apply dyson-button border border-foreground text-foreground hover:bg-foreground hover:text-background;
+  .btn-main-secondary {
+    @apply btn-main border border-foreground text-foreground hover:bg-foreground hover:text-background;
   }
 
-  .dyson-button-ghost {
-    @apply dyson-button text-foreground hover:underline underline-offset-4;
+  .btn-main-ghost {
+    @apply btn-main text-foreground hover:underline underline-offset-4;
   }
 }
 

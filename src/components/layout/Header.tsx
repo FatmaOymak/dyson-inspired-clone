@@ -19,7 +19,7 @@ export function Header() {
       </div>
 
       {/* Main header */}
-      <div className="container-dyson">
+      <div className="container-main">
         <div className="flex items-center justify-between h-16">
           {/* Mobile menu button */}
           <button
@@ -32,7 +32,7 @@ export function Header() {
 
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold tracking-tighter">dyson</span>
+            <span className="text-2xl font-bold tracking-tighter">techstore</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -121,7 +121,7 @@ export function Header() {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="lg:hidden fixed inset-0 top-[105px] bg-background z-50 overflow-y-auto animate-fade-in">
-          <nav className="container-dyson py-6">
+          <nav className="container-main py-6">
             <ul className="space-y-4">
               {categories.map((category) => (
                 <li key={category.id}>

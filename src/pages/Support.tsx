@@ -6,7 +6,7 @@ const supportOptions = [
   {
     icon: MessageCircle,
     title: "Live chat",
-    description: "Chat with a Dyson expert",
+    description: "Chat with an expert",
     link: "/support/chat",
   },
   {
@@ -55,12 +55,12 @@ const Support = () => {
     <Layout>
       {/* Hero */}
       <section className="py-16 lg:py-24 bg-secondary">
-        <div className="container-dyson text-center">
+        <div className="container-main text-center">
           <h1 className="text-4xl md:text-5xl font-semibold mb-4 animate-fade-up">
             How can we help?
           </h1>
           <p className="text-lg text-muted-foreground mb-8 animate-fade-up stagger-1">
-            Get support for your Dyson machine
+            Get support for your machine
           </p>
 
           {/* Search */}
@@ -77,7 +77,7 @@ const Support = () => {
 
       {/* Contact Options */}
       <section className="py-16">
-        <div className="container-dyson">
+        <div className="container-main">
           <h2 className="text-2xl font-semibold mb-8 text-center">Contact us</h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {supportOptions.map((option) => (
@@ -97,7 +97,7 @@ const Support = () => {
 
       {/* Help Topics */}
       <section className="py-16 bg-muted">
-        <div className="container-dyson">
+        <div className="container-main">
           <h2 className="text-2xl font-semibold mb-8 text-center">Browse by topic</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {helpTopics.map((topic) => (
@@ -117,13 +117,13 @@ const Support = () => {
 
       {/* Register Product */}
       <section className="py-16">
-        <div className="container-dyson">
+        <div className="container-main">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-semibold mb-4">Register your machine</h2>
             <p className="text-muted-foreground mb-8">
               Activate your warranty and get access to exclusive owner benefits.
             </p>
-            <Link to="/register" className="dyson-button-primary">
+            <Link to="/register" className="btn-main-primary">
               Register now
             </Link>
           </div>

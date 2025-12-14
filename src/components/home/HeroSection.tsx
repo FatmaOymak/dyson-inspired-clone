@@ -26,7 +26,7 @@ export function HeroSection({
 
   return (
     <section className={isDark ? "bg-foreground text-background" : "bg-background text-foreground"}>
-      <div className={`container-dyson py-12 lg:py-0 lg:min-h-[80vh] flex items-center ${reverse ? "flex-row-reverse" : ""}`}>
+      <div className={`container-main py-12 lg:py-0 lg:min-h-[80vh] flex items-center ${reverse ? "flex-row-reverse" : ""}`}>
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center w-full">
           {/* Content */}
           <div className="space-y-6 opacity-0 animate-fade-up">

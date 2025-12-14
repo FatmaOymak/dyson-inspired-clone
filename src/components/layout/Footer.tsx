@@ -30,7 +30,7 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background">
+    <footer className="bg-[hsl(0_0%_8%)] text-[hsl(0_0%_98%)]">
       {/* Newsletter section */}
       <div className="border-b border-background/20">
         <div className="container-dyson py-12">

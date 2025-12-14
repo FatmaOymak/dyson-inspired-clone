@@ -50,12 +50,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        dyson: {
-          dark: "hsl(var(--dyson-dark))",
-          gray: "hsl(var(--dyson-gray))",
-          light: "hsl(var(--dyson-light))",
-          purple: "hsl(var(--dyson-purple))",
-          orange: "hsl(var(--dyson-orange))",
+        brand: {
+          dark: "hsl(var(--brand-dark))",
+          gray: "hsl(var(--brand-gray))",
+          light: "hsl(var(--brand-light))",
+          purple: "hsl(var(--brand-purple))",
+          orange: "hsl(var(--brand-orange))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

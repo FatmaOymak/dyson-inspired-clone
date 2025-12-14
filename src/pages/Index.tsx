@@ -10,7 +10,7 @@ const Index = () => {
       {/* Hero Section */}
       <HeroSection
         subtitle="New"
-        title="Dyson V15 Detect™"
+        title="V15 Detect Vacuum"
         description="Reveals invisible dust. Proves deep clean with laser and piezo sensor. Our most powerful, intelligent cordless vacuum."
         ctaText="Shop now"
         ctaLink="/product/v15-detect"
@@ -27,7 +27,7 @@ const Index = () => {
       {/* Secondary Hero */}
       <HeroSection
         subtitle="Hair care"
-        title="Dyson Supersonic™"
+        title="Supersonic Hair Dryer"
         description="Fast drying, no extreme heat. Engineered for different hair types. Intelligent heat control for shine."
         ctaText="Learn more"
         ctaLink="/product/supersonic"

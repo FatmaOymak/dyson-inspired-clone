@@ -11,7 +11,7 @@ const Category = () => {
   if (!category) {
     return (
       <Layout>
-        <div className="container-dyson py-24 text-center">
+        <div className="container-main py-24 text-center">
           <h1 className="text-2xl font-semibold">Category not found</h1>
         </div>
       </Layout>
@@ -40,7 +40,7 @@ const Category = () => {
 
       {/* Filters */}
       <section className="border-b border-border sticky top-[105px] bg-background z-40">
-        <div className="container-dyson py-4">
+        <div className="container-main py-4">
           <div className="flex items-center justify-between">
             <div className="flex gap-4">
               {category.subcategories.map((sub) => (
@@ -61,7 +61,7 @@ const Category = () => {
 
       {/* Products Grid */}
       <section className="py-12">
-        <div className="container-dyson">
+        <div className="container-main">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {products.map((product) => (
               <ProductCard key={product.id} product={product} />

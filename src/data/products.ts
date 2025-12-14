@@ -49,7 +49,7 @@ export const categories = [
 export const products: Product[] = [
   {
     id: "v15-detect",
-    name: "Dyson V15 Detect™",
+    name: "V15 Detect Vacuum",
     category: "vacuum-cleaners",
     subcategory: "Cordless",
     price: 699,
@@ -59,7 +59,7 @@ export const products: Product[] = [
     features: [
       "Laser reveals microscopic dust",
       "Piezo sensor counts and sizes dust",
-      "Root Cyclone™ technology",
+      "Root Cyclone technology",
       "Up to 60 minutes run time",
       "LCD screen shows real-time reports",
     ],
@@ -83,7 +83,7 @@ export const products: Product[] = [
   },
   {
     id: "supersonic",
-    name: "Dyson Supersonic™",
+    name: "Supersonic Hair Dryer",
     category: "hair-care",
     subcategory: "Hair dryers",
     price: 329,
@@ -117,7 +117,7 @@ export const products: Product[] = [
   },
   {
     id: "airwrap",
-    name: "Dyson Airwrap™",
+    name: "Airwrap Styler",
     category: "hair-care",
     subcategory: "Stylers",
     price: 479,
@@ -148,7 +148,7 @@ export const products: Product[] = [
   },
   {
     id: "purifier-hot-cool",
-    name: "Dyson Purifier Hot+Cool™",
+    name: "Purifier Hot+Cool",
     category: "air-treatment",
     subcategory: "Purifiers",
     price: 549,
@@ -158,7 +158,7 @@ export const products: Product[] = [
       "HEPA H13 filtration",
       "Captures 99.95% of particles",
       "Heating and cooling",
-      "Air Multiplier™ technology",
+      "Air Multiplier technology",
       "Quiet operation",
     ],
     specs: {
@@ -180,7 +180,7 @@ export const products: Product[] = [
   },
   {
     id: "v12-slim",
-    name: "Dyson V12 Detect Slim™",
+    name: "V12 Detect Slim Vacuum",
     category: "vacuum-cleaners",
     subcategory: "Cordless",
     price: 549,
@@ -210,7 +210,7 @@ export const products: Product[] = [
   },
   {
     id: "solarcycle-morph",
-    name: "Dyson Solarcycle Morph™",
+    name: "Solarcycle Morph Lamp",
     category: "lighting",
     subcategory: "Desk lamps",
     price: 599,

@@ -5,7 +5,7 @@ import { categories } from "@/data/products";
 export function CategoryGrid() {
   return (
     <section className="py-16 lg:py-24">
-      <div className="container-dyson">
+      <div className="container-main">
         <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center">
           Explore our technology
         </h2>

@@ -15,7 +15,7 @@ const promoItems = [
   {
     icon: Headphones,
     title: "Expert support",
-    description: "Speak to a Dyson expert",
+    description: "Speak to an expert",
   },
   {
     icon: Award,
@@ -29,7 +29,7 @@ export function PromoSection() {
     <>
       {/* Features bar */}
       <section className="py-8 border-y border-border">
-        <div className="container-dyson">
+        <div className="container-main">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {promoItems.map((item) => (
               <div key={item.title} className="flex items-start gap-4">
@@ -46,7 +46,7 @@ export function PromoSection() {
 
       {/* Promo banner */}
       <section className="py-16 lg:py-24 bg-primary text-primary-foreground">
-        <div className="container-dyson text-center">
+        <div className="container-main text-center">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">
             Exclusive member offers
           </h2>

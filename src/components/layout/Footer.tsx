@@ -9,7 +9,7 @@ const footerLinks = {
     { name: "Headphones", href: "/category/headphones" },
     { name: "Lighting", href: "/category/lighting" },
     { name: "Deals", href: "/deals" },
-    { name: "Dyson Renewed", href: "/renewed" },
+    { name: "Renewed", href: "/renewed" },
   ],
   support: [
     { name: "Contact us", href: "/support/contact" },
@@ -19,7 +19,7 @@ const footerLinks = {
     { name: "Report a security vulnerability", href: "/support/security" },
   ],
   account: [
-    { name: "MyDyson™", href: "/account" },
+    { name: "My Account", href: "/account" },
     { name: "Machine Registration", href: "/account/register" },
     { name: "Delivery information", href: "/support/delivery" },
   ],
@@ -32,14 +32,14 @@ const footerLinks = {
     { name: "Hand dryers for business", href: "/business/hand-dryers" },
     { name: "Sustainability for business", href: "/business/sustainability" },
     { name: "Hygienic hand drying", href: "/business/hygienic" },
-    { name: "Dyson for Architects and designers", href: "/business/architects" },
+    { name: "For Architects and designers", href: "/business/architects" },
   ],
   about: [
-    { name: "Dyson Stores", href: "/stores" },
+    { name: "Stores", href: "/stores" },
     { name: "Careers", href: "/careers" },
     { name: "Media", href: "/media" },
     { name: "Company information", href: "/company" },
-    { name: "James Dyson foundation", href: "/foundation" },
+    { name: "Foundation", href: "/foundation" },
     { name: "Journey towards sustainability", href: "/sustainability" },
     { name: "Newsletter", href: "/newsletter" },
     { name: "Student Beans", href: "/students" },
@@ -87,9 +87,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Dyson Support Column */}
+          {/* Support Column */}
           <div>
-            <h4 className="text-[hsl(0_0%_98%)] font-medium mb-6">Dyson support</h4>
+            <h4 className="text-[hsl(0_0%_98%)] font-medium mb-6">Support</h4>
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
@@ -135,9 +135,9 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* About Dyson Column */}
+          {/* About Column */}
           <div>
-            <h4 className="text-[hsl(0_0%_98%)] font-medium mb-6">About Dyson</h4>
+            <h4 className="text-[hsl(0_0%_98%)] font-medium mb-6">About Us</h4>
             <ul className="space-y-3">
               {footerLinks.about.map((link) => (
                 <li key={link.name}>
@@ -193,10 +193,10 @@ export function Footer() {
         <div className="container-dyson py-6">
           <div className="flex flex-col md:flex-row justify-between gap-6">
             <p className="text-xs text-[hsl(0_0%_50%)] max-w-4xl leading-relaxed">
-              **PayPal Credit and PayPal Pay in 3 are trading names of PayPal UK Ltd, 5 Fleet Place, London, United Kingdom, EC4M 7RD. PayPal Credit: Terms and conditions apply. Credit subject to status, UK residents only, Dyson Limited acts as a broker and offers finance from PayPal Credit. PayPal Pay in 3: PayPal Pay in 3 is not regulated by the Financial Conduct Authority.
+              **PayPal Credit and PayPal Pay in 3 are trading names of PayPal UK Ltd, 5 Fleet Place, London, United Kingdom, EC4M 7RD. PayPal Credit: Terms and conditions apply. Credit subject to status, UK residents only. PayPal Pay in 3: PayPal Pay in 3 is not regulated by the Financial Conduct Authority.
             </p>
             <p className="text-sm text-[hsl(0_0%_60%)] whitespace-nowrap">
-              © Dyson {new Date().getFullYear()}
+              © {new Date().getFullYear()} All rights reserved.
             </p>
           </div>
         </div>

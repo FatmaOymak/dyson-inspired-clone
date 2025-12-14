@@ -1,72 +1,84 @@
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 const footerLinks = {
   products: [
-    { name: "Vacuum cleaners", href: "/category/vacuum-cleaners" },
+    { name: "Vacuum Cleaners", href: "/category/vacuum-cleaners" },
     { name: "Hair care", href: "/category/hair-care" },
     { name: "Air treatment", href: "/category/air-treatment" },
+    { name: "Headphones", href: "/category/headphones" },
     { name: "Lighting", href: "/category/lighting" },
+    { name: "Deals", href: "/deals" },
+    { name: "Dyson Renewed", href: "/renewed" },
   ],
   support: [
     { name: "Contact us", href: "/support/contact" },
-    { name: "Guides & tips", href: "/support/guides" },
-    { name: "Product registration", href: "/support/register" },
-    { name: "Repairs", href: "/support/repairs" },
+    { name: "Track your order", href: "/support/track" },
+    { name: "Machine support", href: "/support/machine" },
+    { name: "Flexible payment options", href: "/support/payment" },
+    { name: "Report a security vulnerability", href: "/support/security" },
+  ],
+  account: [
+    { name: "MyDyson™", href: "/account" },
+    { name: "Machine Registration", href: "/account/register" },
+    { name: "Delivery information", href: "/support/delivery" },
+  ],
+  business: [
+    { name: "Technology for business", href: "/business" },
+    { name: "Vacuum cleaners for business", href: "/business/vacuum" },
+    { name: "Hair care for business", href: "/business/hair-care" },
+    { name: "Air treatment for business", href: "/business/air-treatment" },
+    { name: "Lighting for business", href: "/business/lighting" },
+    { name: "Hand dryers for business", href: "/business/hand-dryers" },
+    { name: "Sustainability for business", href: "/business/sustainability" },
+    { name: "Hygienic hand drying", href: "/business/hygienic" },
+    { name: "Dyson for Architects and designers", href: "/business/architects" },
   ],
   about: [
-    { name: "About Dyson", href: "/about" },
+    { name: "Dyson Stores", href: "/stores" },
     { name: "Careers", href: "/careers" },
-    { name: "Newsroom", href: "/newsroom" },
-    { name: "James Dyson Foundation", href: "/foundation" },
+    { name: "Media", href: "/media" },
+    { name: "Company information", href: "/company" },
+    { name: "James Dyson foundation", href: "/foundation" },
+    { name: "Journey towards sustainability", href: "/sustainability" },
+    { name: "Newsletter", href: "/newsletter" },
+    { name: "Student Beans", href: "/students" },
+    { name: "Unidays", href: "/unidays" },
   ],
   legal: [
-    { name: "Terms & conditions", href: "/terms" },
     { name: "Privacy policy", href: "/privacy" },
-    { name: "Cookie policy", href: "/cookies" },
-    { name: "Accessibility", href: "/accessibility" },
+    { name: "Terms and conditions", href: "/terms" },
+    { name: "Terms of website use", href: "/website-terms" },
+    { name: "Delivery Details", href: "/delivery" },
+    { name: "Cookies Policy", href: "/cookies" },
+    { name: "Your right to cancel", href: "/cancel" },
+    { name: "Consumer rights", href: "/consumer-rights" },
+  ],
+  legalSecondary: [
+    { name: "Modern Slavery Act Statement", href: "/modern-slavery" },
+    { name: "Sitemap", href: "/sitemap" },
+    { name: "Accessibility Statement", href: "/accessibility" },
+    { name: "2024 UK Gender Pay Gap", href: "/gender-pay-gap" },
+    { name: "Corporate governance", href: "/governance" },
+    { name: "Date notice", href: "/date-notice" },
   ],
 };
 
 export function Footer() {
   return (
-    <footer className="bg-[hsl(0_0%_8%)] text-[hsl(0_0%_98%)]">
-      {/* Newsletter section */}
-      <div className="border-b border-background/20">
-        <div className="container-dyson py-12">
-          <div className="max-w-xl">
-            <h3 className="text-xl font-semibold mb-2">Subscribe for exclusive offers</h3>
-            <p className="text-background/70 mb-4 text-sm">
-              Sign up and be the first to know about exclusive offers, new products and more.
-            </p>
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Email address"
-                className="flex-1 px-4 py-3 bg-transparent border border-background/30 text-background placeholder:text-background/50 focus:outline-none focus:border-background"
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 bg-background text-foreground font-medium hover:bg-background/90 transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
+    <footer className="bg-[hsl(0_0%_8%)] text-[hsl(0_0%_85%)]">
       {/* Main footer links */}
       <div className="container-dyson py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-10">
+          {/* Products Column */}
           <div>
-            <h4 className="font-semibold mb-4">Products</h4>
+            <h4 className="text-[hsl(0_0%_98%)] font-medium mb-6">Products</h4>
             <ul className="space-y-3">
               {footerLinks.products.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-sm text-background/70 hover:text-background transition-colors"
+                    className="text-sm hover:text-[hsl(0_0%_98%)] transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -74,14 +86,30 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* Dyson Support Column */}
           <div>
-            <h4 className="font-semibold mb-4">Support</h4>
+            <h4 className="text-[hsl(0_0%_98%)] font-medium mb-6">Dyson support</h4>
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-sm text-background/70 hover:text-background transition-colors"
+                    className="text-sm hover:text-[hsl(0_0%_98%)] transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            
+            <h4 className="text-[hsl(0_0%_98%)] font-medium mt-8 mb-6">Account</h4>
+            <ul className="space-y-3">
+              {footerLinks.account.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-sm hover:text-[hsl(0_0%_98%)] transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -89,29 +117,33 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* For Business Column */}
           <div>
-            <h4 className="font-semibold mb-4">About</h4>
+            <h4 className="text-[hsl(0_0%_98%)] font-medium mb-6">For business</h4>
+            <ul className="space-y-3">
+              {footerLinks.business.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-sm hover:text-[hsl(0_0%_98%)] transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* About Dyson Column */}
+          <div>
+            <h4 className="text-[hsl(0_0%_98%)] font-medium mb-6">About Dyson</h4>
             <ul className="space-y-3">
               {footerLinks.about.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-sm text-background/70 hover:text-background transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
-            <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-background/70 hover:text-background transition-colors"
+                    className="text-sm hover:text-[hsl(0_0%_98%)] transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -120,32 +152,53 @@ export function Footer() {
             </ul>
           </div>
         </div>
+      </div>
 
-        {/* Social links */}
-        <div className="flex items-center gap-4 mt-12 pt-8 border-t border-background/20">
-          <span className="text-sm text-background/70">Follow us</span>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-background/70 transition-colors" aria-label="Facebook">
-              <Facebook className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-background/70 transition-colors" aria-label="Twitter">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-background/70 transition-colors" aria-label="Instagram">
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-background/70 transition-colors" aria-label="YouTube">
-              <Youtube className="w-5 h-5" />
-            </a>
+      {/* Legal links section */}
+      <div className="border-t border-[hsl(0_0%_20%)]">
+        <div className="container-dyson py-6">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex flex-wrap items-center gap-x-1 text-xs text-[hsl(0_0%_60%)]">
+              {footerLinks.legal.map((link, index) => (
+                <span key={link.name} className="flex items-center">
+                  <Link to={link.href} className="hover:text-[hsl(0_0%_98%)] transition-colors">
+                    {link.name}
+                  </Link>
+                  {index < footerLinks.legal.length - 1 && <span className="mx-2">|</span>}
+                </span>
+              ))}
+            </div>
+            <button className="flex items-center gap-2 text-sm text-[hsl(0_0%_98%)] hover:underline">
+              <span className="w-5 h-4 bg-[url('https://flagcdn.com/w20/gb.png')] bg-cover bg-center rounded-sm" />
+              United Kingdom
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-x-1 mt-4 text-xs text-[hsl(0_0%_60%)]">
+            {footerLinks.legalSecondary.map((link, index) => (
+              <span key={link.name} className="flex items-center">
+                <Link to={link.href} className="hover:text-[hsl(0_0%_98%)] transition-colors">
+                  {link.name}
+                </Link>
+                {index < footerLinks.legalSecondary.length - 1 && <span className="mx-2">|</span>}
+              </span>
+            ))}
           </div>
         </div>
+      </div>
 
-        {/* Copyright */}
-        <div className="mt-8 pt-8 border-t border-background/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <span className="text-2xl font-bold tracking-tighter">dyson</span>
-          <p className="text-sm text-background/70">
-            © {new Date().getFullYear()} Dyson. All rights reserved.
-          </p>
+      {/* Disclaimer and copyright */}
+      <div className="border-t border-[hsl(0_0%_20%)]">
+        <div className="container-dyson py-6">
+          <div className="flex flex-col md:flex-row justify-between gap-6">
+            <p className="text-xs text-[hsl(0_0%_50%)] max-w-4xl leading-relaxed">
+              **PayPal Credit and PayPal Pay in 3 are trading names of PayPal UK Ltd, 5 Fleet Place, London, United Kingdom, EC4M 7RD. PayPal Credit: Terms and conditions apply. Credit subject to status, UK residents only, Dyson Limited acts as a broker and offers finance from PayPal Credit. PayPal Pay in 3: PayPal Pay in 3 is not regulated by the Financial Conduct Authority.
+            </p>
+            <p className="text-sm text-[hsl(0_0%_60%)] whitespace-nowrap">
+              © Dyson {new Date().getFullYear()}
+            </p>
+          </div>
         </div>
       </div>
     </footer>
